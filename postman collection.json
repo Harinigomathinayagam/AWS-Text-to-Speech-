@@ -1,0 +1,336 @@
+{
+	"info": {
+		"_postman_id": "757b4555-8b82-4088-969f-7feb8af52058",
+		"name": "Cloud Labs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3192497"
+	},
+	"item": [
+		{
+			"name": "my-apis",
+			"item": [
+				{
+					"name": "elb",
+					"item": [
+						{
+							"name": "countries",
+							"request": {
+								"auth": {
+									"type": "apikey",
+									"apikey": [
+										{
+											"key": "value",
+											"value": "F8P6JOupz39PMPYhvpP1Q8HEjIXzwcF6qvml7KQ7",
+											"type": "string"
+										},
+										{
+											"key": "key",
+											"value": "X-Api-Key",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://mynlb-bf62546829dffa25.elb.ap-south-1.amazonaws.com/apis/countries",
+									"protocol": "http",
+									"host": [
+										"mynlb-bf62546829dffa25",
+										"elb",
+										"ap-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"apis",
+										"countries"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "health",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://ec2-13-234-111-2.ap-south-1.compute.amazonaws.com:8080/apis/health",
+									"protocol": "http",
+									"host": [
+										"ec2-13-234-111-2",
+										"ap-south-1",
+										"compute",
+										"amazonaws",
+										"com"
+									],
+									"port": "8080",
+									"path": [
+										"apis",
+										"health"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "api-gw",
+					"item": [
+						{
+							"name": "resource",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"role\":\"Admin\",\n    \"title\":\"Niranjan\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://2sieayiow5fbuqlvfkbtnojq5e0jmcoi.lambda-url.ap-south-1.on.aws/apis/resource",
+									"protocol": "https",
+									"host": [
+										"2sieayiow5fbuqlvfkbtnojq5e0jmcoi",
+										"lambda-url",
+										"ap-south-1",
+										"on",
+										"aws"
+									],
+									"path": [
+										"apis",
+										"resource"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "resource",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "MB6kBjpeV13EGYkF92JoD6THtUVdspKI3tpbL9Do",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://69s9xajbsa.execute-api.ap-south-1.amazonaws.com/api/resource/825282ba-5eca-429a-9c85-d4ad89ec9ca8",
+									"protocol": "https",
+									"host": [
+										"69s9xajbsa",
+										"execute-api",
+										"ap-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"resource",
+										"825282ba-5eca-429a-9c85-d4ad89ec9ca8"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "lambda",
+					"item": [
+						{
+							"name": "resource",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"role\":\"Admin\",\n    \"title\":\"Niranjan\",\n    \"class\":\"Engineer\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://6uz4gtprx1.execute-api.ap-south-1.amazonaws.com/apis/resource",
+									"protocol": "https",
+									"host": [
+										"6uz4gtprx1",
+										"execute-api",
+										"ap-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"apis",
+										"resource"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "resource",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "hHBTW7VhV06jm6flrnatI8eXTQmqsQFu2NouC9O6",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://6uz4gtprx1.execute-api.ap-south-1.amazonaws.com/apis/resource/7b55c428-4603-40da-8e86-b7e8b65da894",
+									"protocol": "https",
+									"host": [
+										"6uz4gtprx1",
+										"execute-api",
+										"ap-south-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"apis",
+										"resource",
+										"7b55c428-4603-40da-8e86-b7e8b65da894"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "metadata",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://fgtlnrk6nvdswir2kbztigbwaq0hisoe.lambda-url.ap-south-1.on.aws/apis/metadata/04394f4d-ad27-450e-8319-410f418699fa",
+									"protocol": "https",
+									"host": [
+										"fgtlnrk6nvdswir2kbztigbwaq0hisoe",
+										"lambda-url",
+										"ap-south-1",
+										"on",
+										"aws"
+									],
+									"path": [
+										"apis",
+										"metadata",
+										"04394f4d-ad27-450e-8319-410f418699fa"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "lambda-polly",
+					"item": [
+						{
+							"name": "speak",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"text\":\"Hello Niranjan\",\n    \"filename\":\"hello\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://lxfj2xhfrjlwxldvaqfhlhoi6u0ymchx.lambda-url.ap-south-1.on.aws/speak",
+									"protocol": "https",
+									"host": [
+										"lxfj2xhfrjlwxldvaqfhlhoi6u0ymchx",
+										"lambda-url",
+										"ap-south-1",
+										"on",
+										"aws"
+									],
+									"path": [
+										"speak"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ecs",
+					"item": [
+						{
+							"name": "New Request",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/orders",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"orders"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ml",
+					"item": [
+						{
+							"name": "sentiment-analysis",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"feedback\": \"I eat the pizza\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://3qgimczqws2n3yu7kxkiipvz5e0ltlzl.lambda-url.ap-south-1.on.aws/analyze",
+									"protocol": "https",
+									"host": [
+										"3qgimczqws2n3yu7kxkiipvz5e0ltlzl",
+										"lambda-url",
+										"ap-south-1",
+										"on",
+										"aws"
+									],
+									"path": [
+										"analyze"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
